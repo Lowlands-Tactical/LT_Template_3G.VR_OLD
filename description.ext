@@ -1,5 +1,5 @@
 // Lowlands Tactical 3rd Generation Mission Template: description.ext
-// For usage see: 
+// For usage see:
 // Reference: https://community.bistudio.com/wiki/Description.ext
 
 // HEADER
@@ -17,28 +17,23 @@ onLoadMission = "*** Korte omschrijving hier ***";
 author = "*** Jouw naam hier ***";
 
 // Optional
-loadScreen = "\lt_template_base\logos\logo-banner.paa";
-overviewPicture = "\lt_template_base\logos\logo-banner.paa";
-
+loadScreen = "\lt_template_base\logos\lowtac-banner.paa";
+overviewPicture = "\lt_template_base\logos\lowtac-banner.paa";
 
 
 // RESPAWN SETTINGS
 // Uncomment when players should be able to JIP/RESPAWN (default behaviour)
-#include "\lt_template_base\attribs\respawn.h";
-
-// Uncomment when players should enter spectator upon death
-// #include "\lt_template_base\attribs\death.h";
-
+#include "\lt_template_base\attribs\respawn.h"
 
 
 // PARAMETERS
 // Generic mission parameters to increase replayability
-#include "\lt_template_base\attribs\params.h";
+#include "\lt_template_base\attribs\params.h"
 
 
 // DEBRIEFINGS
 // Default mission debriefings
-#include "\lt_template_base\attribs\debriefs.h";
+#include "\lt_template_base\attribs\debriefs.h"
 
 
 // DEBUG
@@ -46,8 +41,4 @@ enableDebugConsole = 1;
 
 
 // Basic Properties
-#include "\lt_template_base\attribs\basic.h";
-
-
-// Mission Parameters
-#include "\lt_template_base\attribs\params.h";
+#include "\lt_template_base\attribs\basic.h"
