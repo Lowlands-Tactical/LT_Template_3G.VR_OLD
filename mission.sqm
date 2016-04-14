@@ -8,7 +8,7 @@ class EditorData
 	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=6;
+		nextID=9;
 	};
 	class MarkerIDProvider
 	{
@@ -16,16 +16,17 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11.948639,30,-2.7416992};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={38.961067,12.094742,0.06288676};
+		dir[]={-0.76547575,-0.20153427,0.61116731};
+		up[]={-0.15752269,0.97947383,0.12576582};
+		aside[]={0.62396872,8.0243262e-007,0.78151453};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"NLD_Units_Infantry"
+	"NLD_Units_Infantry",
+	"A3_Misc_F_Helpers"
 };
 randomSeed=4488185;
 class ScenarioData
@@ -82,7 +83,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			dataType="Group";
@@ -234,6 +235,45 @@ class Mission
 			name="respawn_west";
 			type="flag_Netherlands";
 			id=2;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20.052,11.197001,21.040001};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this setObjectTexture [0,""\lt_template_base\logos\lowtac.paa""];";
+				name="myobj";
+			};
+			id=7;
+			type="UserTexture10m_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
