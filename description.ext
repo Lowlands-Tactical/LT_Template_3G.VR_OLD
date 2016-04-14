@@ -41,4 +41,13 @@ overviewPicture = "\lt_template_base\logos\logo-banner.paa";
 #include "\lt_template_base\attribs\debriefs.h";
 
 
+// DEBUG
+enableDebugConsole = 1;
 
+
+// Basic Properties
+#include "\lt_template_base\attribs\basic.h";
+
+
+// Mission Parameters
+#include "\lt_template_base\attribs\params.h";
