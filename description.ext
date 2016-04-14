@@ -1,0 +1,44 @@
+// Lowlands Tactical 3rd Generation Mission Template: description.ext
+// For usage see: 
+// Reference: https://community.bistudio.com/wiki/Description.ext
+
+// HEADER
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 30;
+};
+
+// MISSION NAME
+// Place here all the visual settings you require for your mission.
+onLoadName = "*** Missie naam hier. ***";
+onLoadMission = "*** Korte omschrijving hier ***";
+author = "*** Jouw naam hier ***";
+
+// Optional
+loadScreen = "\lt_template_base\logos\logo-banner.paa";
+overviewPicture = "\lt_template_base\logos\logo-banner.paa";
+
+
+
+// RESPAWN SETTINGS
+// Uncomment when players should be able to JIP/RESPAWN (default behaviour)
+#include "\lt_template_base\attribs\respawn.h";
+
+// Uncomment when players should enter spectator upon death
+// #include "\lt_template_base\attribs\death.h";
+
+
+
+// PARAMETERS
+// Generic mission parameters to increase replayability
+#include "\lt_template_base\attribs\params.h";
+
+
+// DEBRIEFINGS
+// Default mission debriefings
+#include "\lt_template_base\attribs\debriefs.h";
+
+
+
