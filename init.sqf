@@ -1,3 +1,6 @@
+// Briefing file.
+null = execVM "briefing.sqf";
+
 // Do not edit unless you know what you are doing or specified otherwise.
 
 // Settings common to all scenarios. (Also loaded in onPlayerRespawn.sqf)
