@@ -1,3 +1,6 @@
+// TFR settings
+#include "\lt_template_base\TFR\settings.sqf"
+
 // Briefing file.
 null = execVM "briefing.sqf";
 
