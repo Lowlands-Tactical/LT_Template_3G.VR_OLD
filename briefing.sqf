@@ -1,10 +1,3 @@
-// MAKE SURE THE PLAYER INITIALIZES PROPERLY
-
-if (!isDedicated && (isNull player)) then
-{
-    waitUntil {sleep 0.1; !isNull player};
-};
-
 // Load the mission admin page.
 null = execVM "\lt_template_base\briefing\admin.sqf";
 
