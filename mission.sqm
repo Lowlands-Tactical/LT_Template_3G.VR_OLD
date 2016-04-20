@@ -42,6 +42,25 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="LT_tfr_selector_id";
+			expression="LT_TFR_var = _value;";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="1";
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="EnableDebugConsole";
 			expression="true";
 			class Value
@@ -59,7 +78,26 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		class Attribute2
+		{
+			property="LT_camo_selector_id";
+			expression="LT_Camo_var = _value; publicvariable 'LT_Camo_var'";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="WLD";
+				};
+			};
+		};
+		nAttributes=3;
 	};
 };
 class Mission
@@ -97,16 +135,59 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23.530119,5.0014391,13.924512};
+						position[]={23.530001,5.0014391,13.925};
 					};
 					side="West";
 					flags=3;
 					class Attributes
 					{
+						init="player setVariable [""lt_role"",""gc"",false];";
 						isPlayer=1;
 					};
 					id=1;
 					type="NLD_WTR_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
