@@ -1,4 +1,4 @@
-version=51;
+version=52;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={30.173182,7.547626,24.047686};
-		dir[]={-0.44860566,-0.28578952,-0.84691441};
-		up[]={-0.13379098,0.95826256,-0.25258696};
-		aside[]={-0.88376909,6.7835208e-007,0.46812239};
+		pos[]={24.68512,8.1952686,4.7749553};
+		dir[]={-0.24274826,-0.1624497,0.95652097};
+		up[]={-0.039985597,0.98666334,0.1575506};
+		aside[]={0.96938062,1.7461953e-006,0.24601726};
 	};
 };
 binarizationWanted=0;
@@ -93,7 +93,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="WLD";
+					value="DST";
 				};
 			};
 		};
@@ -129,7 +129,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=3;
+				items=1;
 				class Item0
 				{
 					dataType="Object";
@@ -138,7 +138,7 @@ class Mission
 						position[]={23.530001,5.0014391,13.925};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="player setVariable [""lt_role"",""gc"",false];";
@@ -150,25 +150,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
 							class Value
@@ -186,26 +167,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={24.466,5.0014391,11.005};
-					};
-					side="West";
-					class Attributes
-					{
-						isPlayable=1;
-					};
-					id=4;
-					type="NLD_JGL_rifleman";
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute1
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -224,10 +186,10 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							property="LT_camo_exclude_unit_ID";
+							expression="_this setVariable ['LT_camo_exclude', _value];";
 							class Value
 							{
 								class data
@@ -236,37 +198,17 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"SCALAR"
 										};
 									};
 									value=0;
 								};
 							};
 						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={20.737,5.0014391,12.128};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						isPlayable=1;
-					};
-					id=5;
-					type="NLD_DST_rifleman";
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute3
 						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							property="LT_role_combo_ID";
+							expression="_this setVariable ['LT_unit_role',_value];";
 							class Value
 							{
 								class data
@@ -275,33 +217,14 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=0;
+									value="custom";
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -333,6 +256,7 @@ class Mission
 			};
 			id=7;
 			type="UserTexture10m_F";
+			atlOffset=6.1970015;
 			class CustomAttributes
 			{
 				class Attribute0
