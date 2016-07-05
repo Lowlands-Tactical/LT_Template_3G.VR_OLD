@@ -16,28 +16,139 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={24.68512,8.1952686,4.7749553};
-		dir[]={-0.24274826,-0.1624497,0.95652097};
-		up[]={-0.039985597,0.98666334,0.1575506};
-		aside[]={0.96938062,1.7461953e-006,0.24601726};
+		pos[]={26.422121,9.7555332,6.1789899};
+		dir[]={-0.29202414,-0.45699564,0.8403098};
+		up[]={-0.15002835,0.88940847,0.43170536};
+		aside[]={0.9446913,1.9105937e-007,0.32830435};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
 	"NLD_Units_Infantry",
+	"A3_Ui_F",
 	"A3_Misc_F_Helpers",
 	"A3_Modules_F_Intel"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=4;
+		class Item0
+		{
+			className="NLD_Units_Infantry";
+			name="NLD_Units_Infantry";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Misc_F";
+			name="Arma 3 - 3D aids and helpers";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=4488185;
 class ScenarioData
 {
-	author="Ligthert";
+	author="*** JOUW NAAM HIER ***";
+	overviewText="*** HIER JOUW MOOIE TEKST ***";
+	overViewPicture="\lt_template_base\logos\lowtac-banner.paa";
+	overViewPictureLocked="\lt_template_base\logos\lowtac-banner.paa";
+	onLoadMission="*** HIER JOUW MOOIE TEKST ***";
+	loadScreen="\lt_template_base\logos\lowtac-banner.paa";
+	showUAVFeed=0;
 	saving=0;
+	respawnDialog=0;
+	disabledAI=1;
+	respawn=3;
+	respawnDelay=30.000002;
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=30;
+	};
 };
 class CustomAttributes
 {
 	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=3;
+	};
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -93,7 +204,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="DST";
+					value="JGL";
 				};
 			};
 		};
@@ -104,19 +215,21 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="*** MISSIE NAAM HIER ***";
+		overviewText="*** JOUW SAMENVATTING HIER ***";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
-		startWeather=0;
+		startWeather=0.44;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0;
+		forecastWeather=0.44;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2035;
 		day=28;
-		hour=13;
-		minute=37;
+		hour=14;
+		minute=-22;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -141,7 +254,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="player setVariable [""lt_role"",""gc"",false];";
 						isPlayer=1;
 					};
 					id=1;
@@ -169,6 +281,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
 							class Value
@@ -186,7 +317,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="LT_camo_exclude_unit_ID";
 							expression="_this setVariable ['LT_camo_exclude', _value];";
@@ -205,7 +336,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="LT_role_combo_ID";
 							expression="_this setVariable ['LT_unit_role',_value];";
@@ -220,11 +351,11 @@ class Mission
 											"STRING"
 										};
 									};
-									value="custom";
+									value="dc";
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 			};
