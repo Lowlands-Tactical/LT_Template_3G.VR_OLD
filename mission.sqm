@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={26.422121,9.7555332,6.1789899};
-		dir[]={-0.29202414,-0.45699564,0.8403098};
-		up[]={-0.15002835,0.88940847,0.43170536};
-		aside[]={0.9446913,1.9105937e-007,0.32830435};
+		pos[]={23.306479,18.620855,-7.826704};
+		dir[]={-0.14507475,-0.4085319,0.90127325};
+		up[]={-0.06493555,0.91267097,0.40339053};
+		aside[]={0.98740643,8.4385738e-007,0.15894318};
 	};
 };
 binarizationWanted=0;
@@ -72,7 +72,6 @@ class ScenarioData
 	overViewPictureLocked="\lt_template_base\logos\lowtac-banner.paa";
 	onLoadMission="*** HIER JOUW MOOIE TEKST ***";
 	loadScreen="\lt_template_base\logos\lowtac-banner.paa";
-	showUAVFeed=0;
 	saving=0;
 	respawnDialog=0;
 	disabledAI=1;
@@ -204,7 +203,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="JGL";
+					value="None";
 				};
 			};
 		};
