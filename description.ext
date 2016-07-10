@@ -2,6 +2,7 @@
 // For usage see:
 // Reference: https://community.bistudio.com/wiki/Description.ext
 
+<<<<<<< HEAD
 // HEADER
 class Header
 {
@@ -37,6 +38,8 @@ overviewPicture = "\lt_template_base\logos\lowtac-banner.paa";
 #include "\lt_template_base\attribs\respawn.h"
 
 
+=======
+>>>>>>> origin/master
 // PARAMETERS
 // Generic mission parameters to increase replayability
 #include "\lt_template_base\attribs\params.h"
