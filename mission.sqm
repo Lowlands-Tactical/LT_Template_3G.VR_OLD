@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=72;
+		nextID=73;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={48.28064,94.509521,-54.308231};
+		pos[]={52.762714,97.167618,-68.170853};
 		dir[]={0.0099090151,-0.53171778,0.84699839};
 		up[]={0.0062207482,0.84682405,0.53180307};
 		aside[]={1.0000316,7.199061e-007,-0.011702022};
@@ -39,7 +39,8 @@ addons[]=
 	"alive_sup_combatsupport",
 	"alive_sup_artillery",
 	"alive_sup_transport",
-	"alive_sup_cas"
+	"alive_sup_cas",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
@@ -305,7 +306,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=24;
+		items=25;
 		class Item0
 		{
 			dataType="Marker";
@@ -1165,7 +1166,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="1.2 Alpha";
+						description="1.1 Alpha";
 						isPlayable=1;
 					};
 					id=27;
@@ -1206,7 +1207,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1282,7 +1283,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="1.2 Bravo";
+						description="1.1 Bravo";
 						isPlayable=1;
 					};
 					id=28;
@@ -1323,7 +1324,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1398,7 +1399,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.2 Automatic Rifleman";
+						description="1.1 Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=29;
@@ -1439,7 +1440,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1514,7 +1515,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.2 Automatic Rifleman";
+						description="1.1 Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=31;
@@ -1555,7 +1556,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1630,7 +1631,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.2 Rifleman (AT)";
+						description="1.1 Rifleman (AT)";
 						isPlayable=1;
 					};
 					id=32;
@@ -1671,7 +1672,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1727,7 +1728,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.2 Rifleman (AT)";
+						description="1.1 Rifleman (AT)";
 						isPlayable=1;
 					};
 					id=34;
@@ -1768,7 +1769,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1824,7 +1825,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.2 Designated Marksman";
+						description="1.1 Designated Marksman";
 						isPlayable=1;
 					};
 					id=35;
@@ -1865,7 +1866,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -1940,7 +1941,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.2 Medic";
+						description="1.1 Medic";
 						isPlayable=1;
 					};
 					id=36;
@@ -1962,7 +1963,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2000,7 +2001,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2199,14 +2200,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16.232828,5.0014391,50.385296};
+						position[]={16.233,5.0014391,50.384998};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						rank="CORPORAL";
-						description="1.1 Bravo";
+						description="1.2 Bravo";
 						isPlayable=1;
 					};
 					id=39;
@@ -2247,7 +2248,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2322,7 +2323,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.1 Automatic Rifleman";
+						description="1.2 Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=40;
@@ -2363,7 +2364,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2438,7 +2439,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.1 Automatic Rifleman";
+						description="1.2 Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=41;
@@ -2479,7 +2480,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2554,7 +2555,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.1 Rifleman (AT)";
+						description="1.2 Rifleman (AT)";
 						isPlayable=1;
 					};
 					id=42;
@@ -2595,7 +2596,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2651,7 +2652,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="1.1 Rifleman (AT)";
+						description="1.2 Rifleman (AT)";
 						isPlayable=1;
 					};
 					id=43;
@@ -2692,7 +2693,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2742,13 +2743,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23.762829,5.0014391,53.894291};
+						position[]={23.763,5.0014391,53.894001};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						description="1.1 Designated Marksman";
+						description="1.2 Designated Marksman";
 						isPlayable=1;
 					};
 					id=44;
@@ -2789,7 +2790,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2858,13 +2859,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23.642,5.0014391,50.529003};
+						position[]={23.642,5.0014391,50.528999};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
-						description="1.1 Medic";
+						description="1.2 Medic";
 						isPlayable=1;
 					};
 					id=45;
@@ -2886,7 +2887,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -2924,7 +2925,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=-1;
 								};
 							};
 						};
@@ -5923,6 +5924,115 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item24
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3.2409999,5,7.027};
+			};
+			id=72;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
