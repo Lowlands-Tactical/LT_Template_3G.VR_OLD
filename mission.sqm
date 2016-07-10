@@ -152,7 +152,7 @@ class ScenarioData
 	{
 		gameType="Coop";
 		minPlayers=1;
-		maxPlayers=30;
+		maxPlayers=28;
 	};
 };
 class CustomAttributes
