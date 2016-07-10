@@ -10,6 +10,17 @@ class Header
 	maxPlayers = 30;
 };
 
+class CfgCamouflage {
+	//Add your own custom classes of camouflage as shown below:
+	/*
+	class LT_test_class1
+	{
+		text = "Guerilla";
+		data =  ["CUP_U_I_GUE_Anorak_03","V_Chestrig_blk","CUP_B_HikingPack_Civ","CUP_H_PMC_PRR_Headset","lt_tfr_dst"];
+	};
+	*/
+};
+
 // MISSION NAME
 // Place here all the visual settings you require for your mission.
 onLoadName = "*** Missie naam hier. ***";
