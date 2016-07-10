@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={23.639351,37.256084,27.840454};
-		dir[]={-0.0014131488,-0.46284994,0.88650697};
-		up[]={-0.00073768181,0.88638073,0.46295977};
-		aside[]={1.000059,1.0700427e-007,0.0015922128};
+		pos[]={48.28064,94.509521,-54.308231};
+		dir[]={0.0099090151,-0.53171778,0.84699839};
+		up[]={0.0062207482,0.84682405,0.53180307};
+		aside[]={1.0000316,7.199061e-007,-0.011702022};
 	};
 };
 binarizationWanted=0;
@@ -262,7 +262,7 @@ class CustomAttributes
 		class Attribute2
 		{
 			property="LT_camo_selector_id";
-			expression="LT_Camo_var = _value; publicvariable 'LT_Camo_var'";
+			expression="LT_Camo_var = _value;";
 			class Value
 			{
 				class data
@@ -274,7 +274,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="DST";
+					value="[""None"",""None"",""None"",""None"",""None""]";
 				};
 			};
 		};
@@ -5309,7 +5309,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={63.96962,5,48.009686};
+				position[]={63.970001,5,48.009998};
 			};
 			id=60;
 			type="ALiVE_sup_combatsupport";
@@ -5330,7 +5330,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="LaserDesignator";
+							value="ItemMap";
 						};
 					};
 				};
