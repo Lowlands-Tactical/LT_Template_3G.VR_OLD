@@ -2,44 +2,6 @@
 // For usage see:
 // Reference: https://community.bistudio.com/wiki/Description.ext
 
-<<<<<<< HEAD
-// HEADER
-class Header
-{
-	gameType = Coop;
-	minPlayers = 1;
-	maxPlayers = 30;
-};
-
-class CfgCamouflage {
-	//Add your own custom classes of camouflage as shown below:
-	/*
-	class LT_test_class1
-	{
-		text = "Guerilla";
-		data =  ["CUP_U_I_GUE_Anorak_03","V_Chestrig_blk","CUP_B_HikingPack_Civ","CUP_H_PMC_PRR_Headset","lt_tfr_dst"];
-	};
-	*/
-};
-
-// MISSION NAME
-// Place here all the visual settings you require for your mission.
-onLoadName = "*** Missie naam hier. ***";
-onLoadMission = "*** Korte omschrijving hier ***";
-author = "*** Jouw naam hier ***";
-
-// Optional
-loadScreen = "\lt_template_base\logos\lowtac-banner.paa";
-overviewPicture = "\lt_template_base\logos\lowtac-banner.paa";
-
-
-// RESPAWN SETTINGS
-// Uncomment when players should be able to JIP/RESPAWN (default behaviour)
-#include "\lt_template_base\attribs\respawn.h"
-
-
-=======
->>>>>>> origin/master
 // PARAMETERS
 // Generic mission parameters to increase replayability
 #include "\lt_template_base\attribs\params.h"
@@ -50,9 +12,18 @@ overviewPicture = "\lt_template_base\logos\lowtac-banner.paa";
 #include "\lt_template_base\attribs\debriefs.h"
 
 
-// DEBUG
-enableDebugConsole = 1;
-
-
 // Basic Properties
 #include "\lt_template_base\attribs\basic.h"
+
+
+// Custom camo's
+class CfgCamouflage {
+	//Add your own custom classes of camouflage as shown below:
+	/*
+	class LT_test_class1
+	{
+		text = "Guerilla";
+		data =  ["CUP_U_I_GUE_Anorak_03","V_Chestrig_blk","CUP_B_HikingPack_Civ","CUP_H_PMC_PRR_Headset","lt_tfr_dst"];
+	};
+	*/
+};
