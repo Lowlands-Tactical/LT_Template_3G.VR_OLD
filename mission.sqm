@@ -57,7 +57,7 @@ class AddonsMetaData
 		class Item1
 		{
 			className="A3_Misc_F";
-			name="Arma 3 - 3D aids and helpers";
+			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -71,7 +71,7 @@ class AddonsMetaData
 		class Item3
 		{
 			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted features";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -772,7 +772,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -889,7 +889,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1005,7 +1005,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1122,7 +1122,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1252,7 +1252,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1369,7 +1369,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1485,7 +1485,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1601,7 +1601,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1698,7 +1698,7 @@ class Mission
 						class Attribute3
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1795,7 +1795,7 @@ class Mission
 						class Attribute3
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -1911,7 +1911,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2046,7 +2046,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2176,7 +2176,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2293,7 +2293,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2409,7 +2409,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2525,7 +2525,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2622,7 +2622,7 @@ class Mission
 						class Attribute3
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2719,7 +2719,7 @@ class Mission
 						class Attribute3
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2835,7 +2835,7 @@ class Mission
 						class Attribute4
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -2970,7 +2970,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3119,7 +3119,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3255,7 +3255,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3390,7 +3390,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3525,7 +3525,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3660,7 +3660,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3795,7 +3795,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -3930,7 +3930,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -4065,7 +4065,7 @@ class Mission
 						class Attribute5
 						{
 							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value];";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -5394,6 +5394,25 @@ class Mission
 				};
 				class Attribute4
 				{
+					property="ALiVE_sup_combatsupport_combatsupport_audio";
+					expression="_this setVariable ['combatsupport_audio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
 					property="ALiVE_sup_combatsupport_combatsupport_respawn";
 					expression="_this setVariable ['combatsupport_respawn',_value,true];";
 					class Value
@@ -5411,7 +5430,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=6;
 			};
 		};
 		class Item20
@@ -5707,6 +5726,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="ALiVE_SUP_TRANSPORT_transport_slingloading";
+					expression="_this setVariable ['transport_slingloading',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="ALiVE_SUP_TRANSPORT_transport_code";
 					expression="_this setVariable ['transport_code',_value,true];";
 					class Value
@@ -5724,7 +5762,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="ALiVE_SUP_TRANSPORT_transport_height";
 					expression="_this setVariable ['transport_height',_value,true];";
@@ -5743,7 +5781,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=5;
 			};
 		};
 		class Item22
@@ -5797,6 +5835,25 @@ class Mission
 				};
 				class Attribute2
 				{
+					property="ALiVE_SUP_TRANSPORT_transport_slingloading";
+					expression="_this setVariable ['transport_slingloading',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
 					property="ALiVE_SUP_TRANSPORT_transport_code";
 					expression="_this setVariable ['transport_code',_value,true];";
 					class Value
@@ -5814,7 +5871,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="ALiVE_SUP_TRANSPORT_transport_height";
 					expression="_this setVariable ['transport_height',_value,true];";
@@ -5833,7 +5890,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=5;
 			};
 		};
 		class Item23
