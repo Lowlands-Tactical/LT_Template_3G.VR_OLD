@@ -5438,7 +5438,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={63.996071,5,29.939657};
+				position[]={63.995998,5,29.940001};
 			};
 			id=61;
 			type="ALiVE_sup_artillery";
@@ -5497,7 +5497,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="FOX SEVEN";
+							value="SCHOORSTEEN EEN";
 						};
 					};
 				};
