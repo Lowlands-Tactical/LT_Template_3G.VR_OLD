@@ -21,6 +21,9 @@ if (!isDedicated && (isNull player)) then
     waitUntil {sleep 0.1; !isNull player};
 };
 
+// Custom gear?
+#include "customGear.sqf"
+
 // Set Camo, Gear and TFR. And in this order!
 #include "\lt_template_base\gear\setCamo.sqf"
 #include "\lt_template_base\gear\setGear.sqf"
