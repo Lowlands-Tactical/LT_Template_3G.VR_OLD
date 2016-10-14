@@ -6,27 +6,27 @@ Rename `.VR` to the following:
 
 | Island | rename |
 | --- | --- |
-| Altis | Altis |
-| Stratis | Stratis |
-| Tanoa | Tanoa |
+| Altis | .Altis |
+| Stratis | .Stratis |
+| Tanoa | .Tanoa |
 | Rahmadi | ??? |
-| Sahrani | Sara |
+| Sahrani | .Sara |
 | Southern Sahrani | ??? |
-| United Sahrani | Sara_dbe1 |
-| Porto | Porto |
-| Utes | Utes |
-| Chernarus | Chernarus |
-| Chernarus Summer | Chernarus_Summer |
-| Desert | Desert_E |
-| Takistan | Takistan |
-| Zargabad | Zargabad |
-| Shapur | Shapur_BAF |
+| United Sahrani | .Sara_dbe1 |
+| Porto | .Porto |
+| Utes | .Utes |
+| Chernarus | .Chernarus |
+| Chernarus Summer | .Chernarus_Summer |
+| Desert | .Desert_E |
+| Takistan | .Takistan |
+| Zargabad | .Zargabad |
+| Shapur | .Shapur_BAF |
 | Proving Grounds |  |
 | Bukovina | ??? |
-| Bystrica | Woodland_ACR |
+| Bystrica | .Woodland_ACR |
 | Takistan Mountains |  |
 | Malden | ??? |
-| Kulgojev | cain |
-| Nogova | noe |
-| Celle2 | mbg_celle2 |
-| CLafghan | clafghan |
+| Kulgojev | .cain |
+| Nogova | .noe |
+| Celle2 | .mbg_celle2 |
+| CLafghan | .clafghan |
