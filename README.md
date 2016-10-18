@@ -11,8 +11,8 @@ Rename `.VR` to the following:
 | Tanoa | .Tanoa |
 | Rahmadi | ??? |
 | Sahrani | .Sara |
-| Southern Sahrani | ??? |
-| United Sahrani | .Sara_dbe1 |
+| Southern Sahrani | .SaraLite |
+| United Sahrani | .Sara_DBE1 |
 | Porto | .Porto |
 | Utes | .Utes |
 | Chernarus | .Chernarus |
@@ -21,12 +21,13 @@ Rename `.VR` to the following:
 | Takistan | .Takistan |
 | Zargabad | .Zargabad |
 | Shapur | .Shapur_BAF |
-| Proving Grounds |  |
-| Bukovina | ??? |
+| Proving Grounds | .ProvingGrounds_PMC |
+| Bukovina | .Bootcamp_ACR |
 | Bystrica | .Woodland_ACR |
-| Takistan Mountains |  |
-| Malden | ??? |
+| Takistan Mountains | .Mountains_ACR |
+| Malden | .Abel |
 | Kulgojev | .cain |
 | Nogova | .noe |
+| Desert Island | .Desert_Island |
 | Celle2 | .mbg_celle2 |
 | CLafghan | .clafghan |
