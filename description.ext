@@ -127,6 +127,7 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
+
 };
 
 
@@ -145,4 +146,11 @@ class CfgCamouflage {
 		data =  ["CUP_U_I_GUE_Anorak_03","V_Chestrig_blk","CUP_B_HikingPack_Civ","CUP_H_PMC_PRR_Headset","lt_tfr_dst"];
 	};
 	*/
+};
+
+class CfgDebriefingSections {
+	class acex_killTracker {
+		title = "Acex Killed Events";
+		variable = "acex_killTracker_outputText";
+	};
 };
