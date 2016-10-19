@@ -26,6 +26,7 @@ Rename `.VR` to the following:
 | Bystrica | .Woodland_ACR |
 | Takistan Mountains | .Mountains_ACR |
 | Malden | .Abel |
+| Everon | ??? |
 | Kulgojev | .cain |
 | Nogova | .noe |
 | Desert Island | .Desert_Island |
