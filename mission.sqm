@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15.627561,21.757162,56.116169};
-		dir[]={-0.22308452,-0.44598615,-0.86693567};
-		up[]={-0.11117923,0.89494663,-0.43206337};
-		aside[]={-0.96854186,-1.6062695e-006,0.24923697};
+		pos[]={45.052177,111.49117,-27.181137};
+		dir[]={0.008993254,-0.77869326,0.62752998};
+		up[]={0.011157124,0.62731266,0.77866095};
+		aside[]={0.99998003,2.6638597e-006,-0.014339862};
 	};
 };
 binarizationWanted=0;
@@ -32,6 +32,7 @@ addons[]=
 	"A3_Modules_F_Curator_Misc",
 	"NLD_Units_Wheeled",
 	"NLD_Units_Infantry",
+	"NLD_Units_Gear",
 	"alive_main",
 	"alive_sys_data",
 	"alive_sys_playeroptions",
@@ -47,7 +48,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=15;
+		items=16;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -88,53 +89,58 @@ class AddonsMetaData
 		};
 		class Item6
 		{
+			className="NLD_Units_Gear";
+			name="NLD_Units_Gear";
+		};
+		class Item7
+		{
 			className="ALiVE_main";
 			name="alive_main";
 			author="ALiVE Mod Team";
 		};
-		class Item7
+		class Item8
 		{
 			className="ALiVE_sys_data";
 			name="alive_sys_data";
 			author="ALiVE Mod Team";
 		};
-		class Item8
+		class Item9
 		{
 			className="ALiVE_SYS_playeroptions";
 			name="alive_sys_playeroptions";
 			author="ALiVE Mod Team";
 		};
-		class Item9
+		class Item10
 		{
 			className="ALiVE_sys_profile";
 			name="alive_sys_profile";
 			author="ALiVE Mod Team";
 		};
-		class Item10
+		class Item11
 		{
 			className="ALiVE_sup_combatsupport";
 			name="alive_sup_combatsupport";
 			author="ALiVE Mod Team";
 		};
-		class Item11
+		class Item12
 		{
 			className="ALiVE_sup_artillery";
 			name="alive_sup_artillery";
 			author="ALiVE Mod Team";
 		};
-		class Item12
+		class Item13
 		{
 			className="ALiVE_SUP_TRANSPORT";
 			name="alive_sup_transport";
 			author="ALiVE Mod Team";
 		};
-		class Item13
+		class Item14
 		{
 			className="ALiVE_sup_cas";
 			name="alive_sup_cas";
 			author="ALiVE Mod Team";
 		};
-		class Item14
+		class Item15
 		{
 			className="lt_template_base";
 			name="lt_template_base";
@@ -2157,7 +2163,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=-1;
+									value=1;
 								};
 							};
 						};
@@ -3081,7 +3087,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=-1;
+									value=1;
 								};
 							};
 						};
