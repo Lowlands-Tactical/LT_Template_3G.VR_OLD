@@ -9,7 +9,7 @@ Rename `.VR` to the following:
 | Altis | .Altis |
 | Stratis | .Stratis |
 | Tanoa | .Tanoa |
-| Rahmadi | ??? |
+| Rahmadi | .intro |
 | Sahrani | .Sara |
 | Southern Sahrani | .SaraLite |
 | United Sahrani | .Sara_DBE1 |
@@ -26,7 +26,7 @@ Rename `.VR` to the following:
 | Bystrica | .Woodland_ACR |
 | Takistan Mountains | .Mountains_ACR |
 | Malden | .Abel |
-| Everon | ??? |
+| Everon | .eden |
 | Kulgojev | .cain |
 | Nogova | .noe |
 | Desert Island | .Desert_Island |
