@@ -1,5 +1,6 @@
 # LT_Template_3G.VR
-This is our template. This requires the lt_template.pbo AddOn.
+This is our template. Many clans have one, but this is ours.
+This requires the lt_template.pbo AddOn.
 
 ## Island names
 Rename `.VR` to the following:
