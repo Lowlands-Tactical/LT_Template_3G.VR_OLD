@@ -146,7 +146,7 @@ class ScenarioData
 	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
-	respawnDelay=30.000002;
+	respawnDelay=5;
 	class Header
 	{
 		gameType="Coop";
@@ -4617,7 +4617,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="false";
+							value="true";
 						};
 					};
 				};
