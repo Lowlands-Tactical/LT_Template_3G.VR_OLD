@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={44.781574,93.155388,-11.802027};
-		dir[]={0.008993254,-0.77869326,0.62752998};
-		up[]={0.011157124,0.62731266,0.77866095};
-		aside[]={0.99998003,2.6638597e-006,-0.014339862};
+		pos[]={32.956482,61.661011,-27.977079};
+		dir[]={-0.0092505673,-0.62150109,0.7835089};
+		up[]={-0.0073403134,0.78329498,0.62157023};
+		aside[]={0.99999911,6.4540768e-007,0.011797072};
 	};
 };
 binarizationWanted=0;
@@ -52,21 +52,21 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
@@ -2134,7 +2134,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3058,7 +3058,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3207,7 +3207,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3343,7 +3343,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3478,7 +3478,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3613,7 +3613,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3748,7 +3748,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -3883,7 +3883,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -4018,7 +4018,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -4153,7 +4153,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -4419,6 +4419,25 @@ class Mission
 				};
 				class Attribute7
 				{
+					property="ALiVE_require_ALiVE_TABLET_MODEL";
+					expression="_this setVariable ['ALiVE_TABLET_MODEL',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Tablet01";
+						};
+					};
+				};
+				class Attribute8
+				{
 					property="ALiVE_require_ALiVE_DISABLEMARKERS";
 					expression="_this setVariable ['ALiVE_DISABLEMARKERS',_value,true];";
 					class Value
@@ -4436,7 +4455,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute8
+				class Attribute9
 				{
 					property="ALiVE_require_ALiVE_DISABLESAVE";
 					expression="_this setVariable ['ALiVE_DISABLESAVE',_value,true];";
@@ -4455,7 +4474,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute9
+				class Attribute10
 				{
 					property="ALiVE_require_ALiVE_AI_DISTRIBUTION";
 					expression="_this setVariable ['ALiVE_AI_DISTRIBUTION',_value,true];";
@@ -4474,7 +4493,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=10;
+				nAttributes=11;
 			};
 		};
 		class Item15
@@ -4522,7 +4541,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="CouchDB";
+							value="pns";
 						};
 					};
 				};
@@ -4579,7 +4598,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="false";
+							value="true";
 						};
 					};
 				};
@@ -4688,7 +4707,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -4764,7 +4783,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="60";
+							value="0";
 						};
 					};
 				};
@@ -4802,7 +4821,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -4840,7 +4859,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -4859,7 +4878,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -4878,7 +4897,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -5030,7 +5049,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -5068,7 +5087,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -5144,7 +5163,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -5220,7 +5239,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -5354,6 +5373,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ALiVE_sys_profile_smoothSpawn";
+					expression="_this setVariable ['smoothSpawn',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.3";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ALiVE_sys_profile_spawnRadius";
 					expression="_this setVariable ['spawnRadius',_value,true];";
 					class Value
@@ -5371,7 +5409,26 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
+				{
+					property="ALiVE_sys_profile_seaTransport";
+					expression="_this setVariable ['seaTransport',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute3
 				{
 					property="ALiVE_sys_profile_activeLimiter";
 					expression="_this setVariable ['activeLimiter',_value,true];";
@@ -5390,7 +5447,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute4
 				{
 					property="ALiVE_sys_profile_spawnTypeJetRadius";
 					expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
@@ -5409,7 +5466,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute5
 				{
 					property="ALiVE_sys_profile_speedModifier";
 					expression="_this setVariable ['speedModifier',_value,true];";
@@ -5428,7 +5485,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute6
 				{
 					property="ALiVE_sys_profile_spawnTypeHeliRadius";
 					expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
@@ -5447,7 +5504,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute5
+				class Attribute7
 				{
 					property="ALiVE_sys_profile_debug";
 					expression="_this setVariable ['debug',_value,true];";
@@ -5466,7 +5523,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute8
 				{
 					property="ALiVE_sys_profile_persistent";
 					expression="_this setVariable ['persistent',_value,true];";
@@ -5485,7 +5542,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute7
+				class Attribute9
 				{
 					property="ALiVE_sys_profile_syncronised";
 					expression="_this setVariable ['syncronised',_value,true];";
@@ -5504,7 +5561,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute8
+				class Attribute10
 				{
 					property="ALiVE_sys_profile_virtualcombat_speedmodifier";
 					expression="_this setVariable ['virtualcombat_speedmodifier',_value,true];";
@@ -5523,7 +5580,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=9;
+				nAttributes=11;
 			};
 		};
 		class Item18
