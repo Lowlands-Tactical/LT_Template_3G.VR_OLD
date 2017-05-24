@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={32.956482,61.661011,-27.977079};
-		dir[]={-0.0092505673,-0.62150109,0.7835089};
-		up[]={-0.0073403134,0.78329498,0.62157023};
-		aside[]={0.99999911,6.4540768e-007,0.011797072};
+		pos[]={33.640865,60.849651,-27.201017};
+		dir[]={-0.0031030038,-0.49729827,0.86771041};
+		up[]={-0.001780576,0.86746216,0.49744657};
+		aside[]={1.0000564,-9.4919176e-007,0.0035668954};
 	};
 };
 binarizationWanted=0;
@@ -862,7 +862,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16.253557,5.0014391,84.787796};
+						position[]={16.254,5.0014391,84.788002};
 					};
 					side="West";
 					flags=7;
@@ -916,6 +916,25 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -933,7 +952,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -952,7 +971,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="LT_role_combo_ID";
 							expression="_this setVariable ['LT_unit_role',_value,true];";
@@ -971,7 +990,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item1
@@ -1329,6 +1348,29 @@ class Mission
 			{
 			};
 			id=21;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CC";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item11
 		{
@@ -2253,6 +2295,29 @@ class Mission
 			{
 			};
 			id=26;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Alpha";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item12
 		{
@@ -3177,6 +3242,29 @@ class Mission
 			{
 			};
 			id=37;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Bravo";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item13
 		{
@@ -4272,6 +4360,29 @@ class Mission
 			{
 			};
 			id=46;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Charlie";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item14
 		{
