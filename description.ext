@@ -135,6 +135,7 @@ class CfgDebriefing
 disableChannels[] = {0,2,4,5,6};
 enableItemsDropping = 0;
 allowFunctionsRecompile = 1;
+respawnOnStart = -1;
 
 // Custom camo's
 class CfgCamouflage {
