@@ -272,7 +272,7 @@ class ScenarioData
 	{
 		gameType="Coop";
 		minPlayers=1;
-		maxPlayers=28;
+		maxPlayers=388;
 	};
 };
 class CustomAttributes
@@ -22857,8 +22857,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="LT_role_combo_ID";
-							expression="_this setVariable ['LT_unit_role',_value,true];";
+							property="face";
+							expression="_this setface _value;";
 							class Value
 							{
 								class data
@@ -22870,7 +22870,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="sn";
+									value="";
 								};
 							};
 						};
@@ -22914,8 +22914,8 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="face";
-							expression="_this setface _value;";
+							property="LT_role_combo_ID";
+							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
 							{
 								class data
@@ -22927,7 +22927,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="";
+									value="sn";
 								};
 							};
 						};
