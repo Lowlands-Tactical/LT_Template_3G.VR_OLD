@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={179.51227,499.64301,-219.79645};
+		pos[]={180.46527,504.44797,-283.65988};
 		dir[]={-0.013389909,-0.68508267,0.72836679};
 		up[]={-0.012593452,0.72839451,0.68504488};
 		aside[]={0.99984956,-2.8750037e-008,0.018380538};
@@ -6320,7 +6320,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 1";
 						isPlayable=1;
 					};
@@ -6418,7 +6418,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 1";
 						isPlayable=1;
 					};
@@ -6516,7 +6516,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 1";
 						isPlayable=1;
 					};
@@ -6614,7 +6614,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 1";
 						isPlayable=1;
 					};
@@ -6749,7 +6749,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 2";
 						isPlayable=1;
 					};
@@ -6847,7 +6847,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 2";
 						isPlayable=1;
 					};
@@ -6945,7 +6945,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 2";
 						isPlayable=1;
 					};
@@ -7043,7 +7043,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 2";
 						isPlayable=1;
 					};
@@ -7178,7 +7178,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 3";
 						isPlayable=1;
 					};
@@ -7276,7 +7276,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 3";
 						isPlayable=1;
 					};
@@ -7374,7 +7374,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 3";
 						isPlayable=1;
 					};
@@ -7472,7 +7472,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 3";
 						isPlayable=1;
 					};
@@ -7858,7 +7858,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 1";
 						isPlayable=1;
 					};
@@ -7956,7 +7956,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 1";
 						isPlayable=1;
 					};
@@ -8054,7 +8054,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 1";
 						isPlayable=1;
 					};
@@ -8152,7 +8152,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 1";
 						isPlayable=1;
 					};
@@ -8287,7 +8287,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 2";
 						isPlayable=1;
 					};
@@ -8385,7 +8385,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 2";
 						isPlayable=1;
 					};
@@ -8483,7 +8483,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 2";
 						isPlayable=1;
 					};
@@ -8581,7 +8581,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 2";
 						isPlayable=1;
 					};
@@ -8716,7 +8716,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 3";
 						isPlayable=1;
 					};
@@ -8814,7 +8814,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 3";
 						isPlayable=1;
 					};
@@ -8912,7 +8912,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 3";
 						isPlayable=1;
 					};
@@ -9010,7 +9010,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 3";
 						isPlayable=1;
 					};
@@ -9396,7 +9396,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 1";
 						isPlayable=1;
 					};
@@ -9494,7 +9494,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 1";
 						isPlayable=1;
 					};
@@ -9592,7 +9592,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 1";
 						isPlayable=1;
 					};
@@ -9690,7 +9690,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 1";
 						isPlayable=1;
 					};
@@ -9825,7 +9825,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 2";
 						isPlayable=1;
 					};
@@ -9923,7 +9923,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 2";
 						isPlayable=1;
 					};
@@ -10021,7 +10021,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 2";
 						isPlayable=1;
 					};
@@ -10119,7 +10119,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 2";
 						isPlayable=1;
 					};
@@ -10254,7 +10254,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 3";
 						isPlayable=1;
 					};
@@ -10352,7 +10352,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 3";
 						isPlayable=1;
 					};
@@ -10450,7 +10450,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""BLUE""}";
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 3";
 						isPlayable=1;
 					};
@@ -10548,7 +10548,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this assignTeam ""RED""}";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 3";
 						isPlayable=1;
 					};
@@ -17071,6 +17071,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 1";
 						isPlayable=1;
 					};
@@ -17149,6 +17150,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 1";
 						isPlayable=1;
 					};
@@ -17227,6 +17229,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 1";
 						isPlayable=1;
 					};
@@ -17305,6 +17308,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 1";
 						isPlayable=1;
 					};
@@ -17420,6 +17424,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 2";
 						isPlayable=1;
 					};
@@ -17498,6 +17503,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 2";
 						isPlayable=1;
 					};
@@ -17576,6 +17582,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 2";
 						isPlayable=1;
 					};
@@ -17654,6 +17661,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 2";
 						isPlayable=1;
 					};
@@ -17769,6 +17777,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 3";
 						isPlayable=1;
 					};
@@ -17847,6 +17856,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 3";
 						isPlayable=1;
 					};
@@ -17925,6 +17935,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 3";
 						isPlayable=1;
 					};
@@ -18003,6 +18014,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 3";
 						isPlayable=1;
 					};
@@ -18331,6 +18343,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 1";
 						isPlayable=1;
 					};
@@ -18409,6 +18422,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 1";
 						isPlayable=1;
 					};
@@ -18487,6 +18501,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 1";
 						isPlayable=1;
 					};
@@ -18565,6 +18580,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 1";
 						isPlayable=1;
 					};
@@ -18680,6 +18696,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 2";
 						isPlayable=1;
 					};
@@ -18758,6 +18775,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 2";
 						isPlayable=1;
 					};
@@ -18836,6 +18854,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 2";
 						isPlayable=1;
 					};
@@ -18914,6 +18933,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 2";
 						isPlayable=1;
 					};
@@ -19029,6 +19049,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 3";
 						isPlayable=1;
 					};
@@ -19107,6 +19128,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 3";
 						isPlayable=1;
 					};
@@ -19185,6 +19207,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 3";
 						isPlayable=1;
 					};
@@ -19263,6 +19286,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 3";
 						isPlayable=1;
 					};
@@ -19591,6 +19615,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 1";
 						isPlayable=1;
 					};
@@ -19669,6 +19694,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 1";
 						isPlayable=1;
 					};
@@ -19747,6 +19773,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 1";
 						isPlayable=1;
 					};
@@ -19825,6 +19852,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 1";
 						isPlayable=1;
 					};
@@ -19940,6 +19968,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 2";
 						isPlayable=1;
 					};
@@ -20018,6 +20047,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 2";
 						isPlayable=1;
 					};
@@ -20096,6 +20126,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 2";
 						isPlayable=1;
 					};
@@ -20174,6 +20205,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 2";
 						isPlayable=1;
 					};
@@ -20289,6 +20321,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 3";
 						isPlayable=1;
 					};
@@ -20367,6 +20400,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 3";
 						isPlayable=1;
 					};
@@ -20445,6 +20479,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 3";
 						isPlayable=1;
 					};
@@ -20523,6 +20558,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 3";
 						isPlayable=1;
 					};
@@ -26774,6 +26810,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 1";
 						isPlayable=1;
 					};
@@ -26852,6 +26889,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 1";
 						isPlayable=1;
 					};
@@ -27123,6 +27161,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 2";
 						isPlayable=1;
 					};
@@ -27201,6 +27240,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 2";
 						isPlayable=1;
 					};
@@ -27472,6 +27512,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Alpha 3";
 						isPlayable=1;
 					};
@@ -27550,6 +27591,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Alpha 3";
 						isPlayable=1;
 					};
@@ -28034,6 +28076,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 1";
 						isPlayable=1;
 					};
@@ -28112,6 +28155,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 1";
 						isPlayable=1;
 					};
@@ -28260,6 +28304,7 @@ class Mission
 			};
 			class Attributes
 			{
+				init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 			};
 			id=566;
 			class CustomAttributes
@@ -28383,6 +28428,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 2";
 						isPlayable=1;
 					};
@@ -28461,6 +28507,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 2";
 						isPlayable=1;
 					};
@@ -28732,6 +28779,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Bravo 3";
 						isPlayable=1;
 					};
@@ -28810,6 +28858,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Bravo 3";
 						isPlayable=1;
 					};
@@ -29294,6 +29343,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 1";
 						isPlayable=1;
 					};
@@ -29372,6 +29422,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 1";
 						isPlayable=1;
 					};
@@ -29643,6 +29694,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 2";
 						isPlayable=1;
 					};
@@ -29721,6 +29773,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 2";
 						isPlayable=1;
 					};
@@ -29992,6 +30045,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Automatic Rifleman@Charlie 3";
 						isPlayable=1;
 					};
@@ -30070,6 +30124,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""RED"", true];}";
 						description="Assistant Automatic Rifleman@Charlie 3";
 						isPlayable=1;
 					};
