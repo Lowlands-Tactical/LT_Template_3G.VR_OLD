@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={180.46527,504.44797,-283.65988};
-		dir[]={-0.013389909,-0.68508267,0.72836679};
-		up[]={-0.012593452,0.72839451,0.68504488};
-		aside[]={0.99984956,-2.8750037e-008,0.018380538};
+		pos[]={299.99649,29.885452,464.42944};
+		dir[]={-0.0060145566,-0.70855445,0.70566368};
+		up[]={-0.0060396804,0.70558178,0.70860553};
+		aside[]={0.99998659,-4.873641e-008,0.0085230712};
 	};
 };
 binarizationWanted=0;
@@ -26732,6 +26732,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 1";
 						isPlayable=1;
 					};
@@ -26968,6 +26969,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 1";
 						isPlayable=1;
 					};
@@ -27083,6 +27085,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 2";
 						isPlayable=1;
 					};
@@ -27319,6 +27322,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 2";
 						isPlayable=1;
 					};
@@ -27434,6 +27438,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Alpha 3";
 						isPlayable=1;
 					};
@@ -27670,6 +27675,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Alpha 3";
 						isPlayable=1;
 					};
@@ -27998,6 +28004,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 1";
 						isPlayable=1;
 					};
@@ -28234,6 +28241,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 1";
 						isPlayable=1;
 					};
@@ -28350,6 +28358,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 2";
 						isPlayable=1;
 					};
@@ -28586,6 +28595,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 2";
 						isPlayable=1;
 					};
@@ -28701,6 +28711,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Bravo 3";
 						isPlayable=1;
 					};
@@ -28937,6 +28948,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Bravo 3";
 						isPlayable=1;
 					};
@@ -29265,6 +29277,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 1";
 						isPlayable=1;
 					};
@@ -29501,6 +29514,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 1";
 						isPlayable=1;
 					};
@@ -29616,6 +29630,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 2";
 						isPlayable=1;
 					};
@@ -29852,6 +29867,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 2";
 						isPlayable=1;
 					};
@@ -29967,6 +29983,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Team Leader@Charlie 3";
 						isPlayable=1;
 					};
@@ -30203,6 +30220,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{this setVariable [""lt_unit_color"", ""BLUE"", true];}";
 						description="Rifleman (AT)@Charlie 3";
 						isPlayable=1;
 					};
