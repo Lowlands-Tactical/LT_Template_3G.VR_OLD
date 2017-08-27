@@ -32,4 +32,4 @@ Rename `.VR` to the following:
 | Nogova | .noe |
 | Desert Island | .Desert_Island |
 | Celle2 | .mbg_celle2 |
-| CLafghan | .clafghan |
+| Isla Duala | .IslaDuala3 |
