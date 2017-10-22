@@ -16,10 +16,7 @@ diag_log "               \/     \/             \/     \/          ";
 #include "\lt_template_base\TFR\settings.sqf"
 
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
-if (!isDedicated && (isNull player)) then
-{
-    waitUntil {sleep 0.1; !isNull player};
-};
+if (!isDedicated && player != player) then { waitUntil {player == player && time > 0.3}; } else { waitUntil {time > 0.3}; };
 
 // Set Camo, Gear and TFR. And in this order!
 #include "\lt_template_base\gear\setCamo.sqf"
