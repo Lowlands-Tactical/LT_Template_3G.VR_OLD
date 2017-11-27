@@ -15,6 +15,9 @@ diag_log "               \/     \/             \/     \/          ";
 // TFR settings
 #include "\lt_template_base\TFR\settings.sqf"
 
+// Briefing file.
+null = execVM "briefing.sqf";
+
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 if (!isDedicated && player != player) then { waitUntil {player == player && time > 0.3}; } else { waitUntil {time > 0.3}; };
 
@@ -22,9 +25,6 @@ if (!isDedicated && player != player) then { waitUntil {player == player && time
 #include "\lt_template_base\gear\setCamo.sqf"
 #include "\lt_template_base\gear\setGear.sqf"
 #include "\lt_template_base\gear\setTFR.sqf"
-
-// Briefing file.
-null = execVM "briefing.sqf";
 
 // Do not edit unless you know what you are doing or specified otherwise.
 
