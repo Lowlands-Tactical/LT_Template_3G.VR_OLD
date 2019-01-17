@@ -151,7 +151,7 @@ class CfgCamouflage {
 	class LT_test_class1
 	{
 		text = "Guerilla";
-		data =  ["CUP_U_I_GUE_Anorak_03","V_Chestrig_blk","CUP_B_HikingPack_Civ","CUP_H_PMC_PRR_Headset","lt_tfr_dst"];
+		data =  ["UNIFORM","VEST","BACKPACK","HELM","Radio?"];
 	};
 	*/
 };
