@@ -456,7 +456,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="\lt_template_base\gear\Loadouts\NATO_2035_MX.sqf";
+					value="\lt_template_base\gear\Loadouts\GER_Army.sqf";
 				};
 			};
 		};
@@ -494,7 +494,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="\lt_template_base\gear\Loadouts\CSAT_2035_KAT.sqf";
+					value="\lt_template_base\gear\Loadouts\USSR_Army.sqf";
 				};
 			};
 		};
@@ -570,7 +570,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="\lt_template_base\gear\Loadouts\AAF_2035.sqf";
+					value="\lt_template_base\gear\Loadouts\US_Army.sqf";
 				};
 			};
 		};
