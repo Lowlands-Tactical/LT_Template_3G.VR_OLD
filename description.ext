@@ -53,7 +53,7 @@ class Params
 		title = "Units have NVG's";
 		values[] = {0,1};
 		texts[] = {"No", "Yes"};
-		default = 1;
+		default = 0;
 	};
 	class lt_fatigue_onoff
 	{
