@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={73.677818,56.108791,253.26009};
-		dir[]={0.49644306,-0.75964922,-0.42035916};
-		up[]={0.57979041,0.6502291,-0.49093032};
-		aside[]={-0.64626545,3.1286254e-007,-0.76324141};
+		pos[]={40.54504,74.11129,189.15097};
+		dir[]={0.58090121,-0.81411016,-0.0031298927};
+		up[]={0.81414461,0.58061898,-0.0043849996};
+		aside[]={-0.0053869877,1.2227622e-007,-1.0000807};
 	};
 };
 binarizationWanted=0;
@@ -21852,6 +21852,67 @@ class Mission
 			};
 			id=749;
 			type="uns_M113_M2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_g"",""uns_m16"",""uns_m79"",""uns_m72"",""FirstAidKit""],[1,1,1,1,1,10]],[[""uns_ItemFuelcan"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m61gren"",""uns_m67gren"",""uns_m18white"",""Uns_1Rnd_HE_M406"",""uns_40mm_mkv_Green"",""uns_m72rocket"",""DemoCharge_Remote_Mag""],[1,12,6,2,2,8,8,12,1,1]],[[""Binocular"",""ToolKit""],[1,1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item76
 		{
@@ -21867,6 +21928,67 @@ class Mission
 			};
 			id=765;
 			type="uns_M113_M134";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_g"",""uns_m16"",""uns_m79"",""uns_m72"",""FirstAidKit""],[1,1,1,1,1,10]],[[""uns_ItemFuelcan"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m61gren"",""uns_m67gren"",""uns_m18white"",""Uns_1Rnd_HE_M406"",""uns_40mm_mkv_Green"",""uns_m72rocket"",""DemoCharge_Remote_Mag""],[1,12,6,2,2,8,8,12,1,1]],[[""Binocular"",""ToolKit""],[1,1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item77
 		{
@@ -21882,13 +22004,74 @@ class Mission
 			};
 			id=766;
 			type="uns_M113_30cal";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_g"",""uns_m16"",""uns_m79"",""uns_m72"",""FirstAidKit""],[1,1,1,1,1,10]],[[""uns_ItemFuelcan"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m61gren"",""uns_m67gren"",""uns_m18white"",""Uns_1Rnd_HE_M406"",""uns_40mm_mkv_Green"",""uns_m72rocket"",""DemoCharge_Remote_Mag""],[1,12,6,2,2,8,8,12,1,1]],[[""Binocular"",""ToolKit""],[1,1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item78
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={100.64139,5.0509958,192.62036};
+				position[]={100.64185,5.0509958,192.62029};
 			};
 			side="Empty";
 			flags=4;
@@ -21897,6 +22080,67 @@ class Mission
 			};
 			id=769;
 			type="uns_m551";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_med";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_g"",""uns_m3a1"",""uns_m79"",""uns_m72"",""FirstAidKit""],[1,1,1,1,1,10]],[[""uns_ItemFuelcan"",""uns_m3a1mag"",""uns_m60mag"",""uns_m61gren"",""uns_m18white"",""Uns_1Rnd_HE_M406"",""uns_40mm_mkv_Green"",""uns_m72rocket"",""DemoCharge_Remote_Mag""],[1,6,6,2,8,8,12,1,1]],[[""Binocular"",""ToolKit""],[1,1]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item79
 		{
@@ -21912,6 +22156,67 @@ class Mission
 			};
 			id=771;
 			type="uns_UH1D_m60_light";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_w"",""uns_m16"",""uns_m79"",""uns_m1897"",""FirstAidKit""],[1,1,2,1,1,3]],[[""UNS_EAM2Braft"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m60mag_200"",""uns_ItemFuelcan"",""uns_kabar"",""uns_12gaugemag_6"",""uns_40mm_mkv_White"",""uns_m406vest"",""uns_m61gren"",""uns_m34gren"",""uns_mk3a2gren"",""uns_m18Yellow"",""uns_m18red""],[1,6,6,2,2,1,12,30,3,32,12,12,32,32]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item80
 		{
@@ -21927,6 +22232,67 @@ class Mission
 			};
 			id=774;
 			type="uns_UH1D_m60_light";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_w"",""uns_m16"",""uns_m79"",""uns_m1897"",""FirstAidKit""],[1,1,2,1,1,3]],[[""UNS_EAM2Braft"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m60mag_200"",""uns_ItemFuelcan"",""uns_kabar"",""uns_12gaugemag_6"",""uns_40mm_mkv_White"",""uns_m406vest"",""uns_m61gren"",""uns_m34gren"",""uns_mk3a2gren"",""uns_m18Yellow"",""uns_m18red""],[1,6,6,2,2,1,12,30,3,32,12,12,32,32]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item81
 		{
@@ -21942,13 +22308,74 @@ class Mission
 			};
 			id=775;
 			type="uns_UH1D_m60_light";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_w"",""uns_m16"",""uns_m79"",""uns_m1897"",""FirstAidKit""],[1,1,2,1,1,3]],[[""UNS_EAM2Braft"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m60mag_200"",""uns_ItemFuelcan"",""uns_kabar"",""uns_12gaugemag_6"",""uns_40mm_mkv_White"",""uns_m406vest"",""uns_m61gren"",""uns_m34gren"",""uns_mk3a2gren"",""uns_m18Yellow"",""uns_m18red""],[1,6,6,2,2,1,12,30,3,32,12,12,32,32]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item82
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={81.295868,7.1032104,150.29593};
+				position[]={81.295998,7.1032104,150.29607};
 			};
 			side="Empty";
 			flags=4;
@@ -21957,13 +22384,74 @@ class Mission
 			};
 			id=777;
 			type="UNS_UH1C_M3_ARA";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_small";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_mkvFlarePistol"",""uns_MX991_w"",""uns_m16"",""uns_m79"",""uns_m1897"",""FirstAidKit""],[1,1,2,1,1,3]],[[""UNS_EAM2Braft"",""uns_20Rnd_556x45_Stanag"",""uns_m60mag"",""uns_m60mag_200"",""uns_ItemFuelcan"",""uns_kabar"",""uns_12gaugemag_6"",""uns_40mm_mkv_White"",""uns_m406vest"",""uns_m61gren"",""uns_m34gren"",""uns_mk3a2gren"",""uns_m18Yellow"",""uns_m18red""],[1,6,6,2,2,1,12,30,3,32,12,12,32,32]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item83
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={98.198914,7.4953203,150.97652};
+				position[]={98.198997,7.4953203,150.97662};
 			};
 			side="Empty";
 			flags=4;
@@ -21975,6 +22463,67 @@ class Mission
 			};
 			id=781;
 			type="uns_A7_CAS";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WEST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="empty";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_38spec"",""uns_xm177e2_short"",""uns_mkvFlarePistol"",""FirstAidKit""],[1,1,1,1]],[[""UNS_EAM2Braft"",""uns_20Rnd_556x45_Stanag"",""uns_kabar"",""uns_38specmag"",""uns_40mm_mkv_Red""],[1,8,1,4,12]],[[],[]],[[""UNS_BA22_Para""],[1]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item84
 		{
@@ -21990,6 +22539,67 @@ class Mission
 			};
 			id=853;
 			type="uns_Type63_mg";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_k50mdrum"",""uns_type50"",""uns_sa7"",""uns_B40"",""FirstAidKit""],[2,1,1,1,4]],[[""uns_ItemFuelcan"",""uns_k50mag_T"",""uns_ppshmag_T"",""uns_sa7mag"",""uns_B40grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren""],[1,11,9,1,12,2,2,6,5]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item85
 		{
@@ -22005,6 +22615,67 @@ class Mission
 			};
 			id=854;
 			type="uns_Type63_mg";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_k50mdrum"",""uns_type50"",""uns_sa7"",""uns_B40"",""FirstAidKit""],[2,1,1,1,4]],[[""uns_ItemFuelcan"",""uns_k50mag_T"",""uns_ppshmag_T"",""uns_sa7mag"",""uns_B40grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren""],[1,11,9,1,12,2,2,6,5]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item86
 		{
@@ -22020,13 +22691,74 @@ class Mission
 			};
 			id=855;
 			type="uns_Type63_mg";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="v_ifv";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_k50mdrum"",""uns_type50"",""uns_sa7"",""uns_B40"",""FirstAidKit""],[2,1,1,1,4]],[[""uns_ItemFuelcan"",""uns_k50mag_T"",""uns_ppshmag_T"",""uns_sa7mag"",""uns_B40grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren""],[1,11,9,1,12,2,2,6,5]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item87
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={164.0979,7.5365934,196.23648};
+				position[]={164.09798,7.5365934,196.23599};
 			};
 			side="Empty";
 			flags=4;
@@ -22035,6 +22767,67 @@ class Mission
 			};
 			id=856;
 			type="uns_t54_nva";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_med";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_APS"",""uns_sa58v"",""uns_akms"",""uns_B40"",""FirstAidKit""],[1,1,1,1,4]],[[""uns_ItemFuelcan"",""uns_ak47mag"",""uns_sa58mag"",""uns_B40grenade"",""uns_20Rnd_APS"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren""],[1,6,6,3,4,2,6,6]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item88
 		{
@@ -22053,6 +22846,67 @@ class Mission
 			};
 			id=860;
 			type="uns_Mi8T_VPAF";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_large";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_ak47"",""uns_type56"",""uns_rpd"",""uns_RPK_40"",""uns_svd"",""uns_rpg7"",""uns_rpg2"",""FirstAidKit""],[4,1,1,1,1,1,1,4]],[[""uns_ak47mag"",""uns_rpdmag"",""uns_rpkmag"",""uns_svdmag"",""uns_ItemFuelcan"",""uns_rpg7grenade"",""uns_rpg2grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren"",""uns_rdg2"",""uns_rdg3""],[20,10,10,6,2,2,2,2,1,14,14,20,20]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item89
 		{
@@ -22071,6 +22925,67 @@ class Mission
 			};
 			id=861;
 			type="uns_Mi8T_VPAF";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_large";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_ak47"",""uns_type56"",""uns_rpd"",""uns_RPK_40"",""uns_svd"",""uns_rpg7"",""uns_rpg2"",""FirstAidKit""],[4,1,1,1,1,1,1,4]],[[""uns_ak47mag"",""uns_rpdmag"",""uns_rpkmag"",""uns_svdmag"",""uns_ItemFuelcan"",""uns_rpg7grenade"",""uns_rpg2grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren"",""uns_rdg2"",""uns_rdg3""],[20,10,10,6,2,2,2,2,1,14,14,20,20]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item90
 		{
@@ -22089,13 +23004,74 @@ class Mission
 			};
 			id=862;
 			type="uns_Mi8T_VPAF";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_large";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_ak47"",""uns_type56"",""uns_rpd"",""uns_RPK_40"",""uns_svd"",""uns_rpg7"",""uns_rpg2"",""FirstAidKit""],[4,1,1,1,1,1,1,4]],[[""uns_ak47mag"",""uns_rpdmag"",""uns_rpkmag"",""uns_svdmag"",""uns_ItemFuelcan"",""uns_rpg7grenade"",""uns_rpg2grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren"",""uns_rdg2"",""uns_rdg3""],[20,10,10,6,2,2,2,2,1,14,14,20,20]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item91
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={143.80338,8.4217596,149.31981};
+				position[]={143.80316,8.4217596,149.31952};
 			};
 			side="Empty";
 			flags=4;
@@ -22107,21 +23083,144 @@ class Mission
 			};
 			id=863;
 			type="uns_an2_cas";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="crate_small";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""uns_ak47"",""uns_rpd"",""uns_rpg7"",""FirstAidKit""],[4,1,1,4]],[[""uns_ak47mag"",""uns_rpdmag"",""uns_ItemFuelcan"",""uns_rpg7grenade"",""MineE"",""PipeBomb"",""uns_rgd33gren"",""uns_rg42gren"",""uns_rdg2"",""uns_rdg3""],[20,10,2,2,2,1,14,14,20,20]],[[],[]],[[""UNS_BA22_Para""],[4]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 		class Item92
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={164.6199,4.9929156,146.8369};
+				position[]={164.61952,4.9929156,146.8374};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				pylons=";;uns_pylonRack_16Rnd_Rocket_57_HE;uns_pylonRack_16Rnd_Rocket_57_HE;uns_pylonRack_1Rnd_Napalm_ZB360;uns_pylonRack_1Rnd_Napalm_ZB360;;";
 			};
 			id=864;
 			type="uns_Mig21_CAS";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="LT_veh_side_combo_ID";
+					expression="_this setVariable ['LT_vehicle_side',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="EAST";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="LT_veh_role_combo_ID";
+					expression="_this setVariable ['LT_vehicle_role',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="empty";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[""UNS_BA22_Para""],[1]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 	};
 	class Connections
