@@ -55,6 +55,13 @@ class Params
 		texts[] = {"No", "Yes"};
 		default = 1;
 	};
+    class lt_flashlight_setting
+    {
+        title = "Units use lamps:";
+        values[] = {0,1,2,3};
+        texts[] = {"Default", "Flashlights", "IR Laser", "Laser and Flashlights"};
+        default = 0;
+    };
 	class lt_fatigue_onoff
 	{
 		title = "Fatigue";
@@ -78,9 +85,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Mission Success!";
-		subtitle = "We are the winrars!";
-		description = "Grate Jorb Peoples! We have showed the enemy we are as hard as a coffin nail.";
+		title = "Missie geslaagd!";
+		subtitle = "Goed werk!";
+		description = "De tegenstander zal nu wel 2 keer nadenken voordat ze met ons sollen!";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -88,9 +95,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Partial Success";
-		subtitle = "We answered the Call of Duty!";
-		description = "And you nearly got it right. Back to Minecraft?";
+		title = "Goed begin is het halve werk..";
+		subtitle = ".. Beetje jammer dat het maar de helft is!";
+		description = "Volgende keer gaan we wel alle doelstellingen halen?";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -98,9 +105,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Mission Failure";
-		subtitle = "We have botched this job.";
-		description = "Better luck next time!";
+		title = "Missie gefaald";
+		subtitle = "Jammer joh";
+		description = "Terug naar Kamp Holland";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
