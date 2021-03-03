@@ -7,7 +7,15 @@
 class Params
 {
 
-
+	class lt_param_timer
+	{
+		title = "Mission safety timer (minutes)";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
+		texts[] = {"No timer","1","2","3","4","5","6","7","8","9","10","15"};
+		default = 5;
+		code = "lt_param_mission_timer = %1";
+	};
+	
 	class lt_param_weather
 	{
 		title = "Weather";
