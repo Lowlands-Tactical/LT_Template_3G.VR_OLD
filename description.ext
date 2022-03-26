@@ -162,3 +162,5 @@ class CfgCamouflage {
 	};
 	*/
 };
+
+#include "configs\CfgFunctions.hpp"

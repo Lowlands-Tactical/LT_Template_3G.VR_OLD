@@ -6,9 +6,13 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=517;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
-		nextID=2474;
+		nextID=2476;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=64;
+		nextID=75;
 	};
 	class Camera
 	{
-		pos[]={184.47818,106.03801,98.920486};
-		dir[]={-0.044216186,-0.56661969,0.82280815};
-		up[]={-0.030405739,0.8239727,0.56580967};
-		aside[]={0.99857014,2.9391776e-007,0.05366097};
+		pos[]={110.77864,141.65613,122.28032};
+		dir[]={0.080074064,-0.6870482,0.72231698};
+		up[]={0.075706318,0.72655934,0.68292254};
+		aside[]={0.99400669,-1.4607213e-006,-0.11018886};
 	};
 };
 binarizationWanted=0;
@@ -42,13 +46,13 @@ addons[]=
 	"alive_sup_artillery",
 	"alive_sup_cas",
 	"alive_sup_transport",
-	"A3_Modules_F_Multiplayer",
 	"A3_Characters_F",
 	"A3_Ui_F",
 	"ace_map",
 	"A3_Air_F_EPC_Plane_CAS_01",
 	"ace_realisticnames",
 	"A3_Armor_F_Beta_APC_Wheeled_01",
+	"ace_vehicle_damage",
 	"acre_sys_intercom",
 	"A3_Armor_F_EPC_MBT_01",
 	"A3_Air_F_Beta_Heli_Attack_01",
@@ -61,7 +65,6 @@ addons[]=
 	"A3_Armor_F_Beta_APC_Wheeled_02",
 	"CUP_AirVehicles_SU34",
 	"A3_Armor_F_Gamma_MBT_02",
-	"ace_cookoff",
 	"A3_Air_F_Heli_Light_02",
 	"A3_Characters_F_Tank",
 	"CUP_AirVehicles_AH1Z",
@@ -176,63 +179,63 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="ace_vehicle_damage";
+			name="ACE3 - Vehicle Damage";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item16
+		{
 			className="acre_sys_intercom";
 			name="ACRE2 - Vehicle Intercom";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Armor_F_EPC";
 			name="Arma 3 Win Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item19
+		class Item20
 		{
 			className="FIR_PilotCrewPack_US";
 			name="FIR_PilotCrewPack_US";
 		};
-		class Item20
+		class Item21
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_AirVehicles_SU34";
 			name="CUP_AirVehicles_SU34";
 			author="Sabre[Dust], Community Upgrade Project";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Armor_F_Gamma";
 			name="Arma 3 - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
-		};
-		class Item23
-		{
-			className="ace_cookoff";
-			name="ACE3 - Cook off";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
 		};
 		class Item24
 		{
@@ -355,6 +358,98 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="ENH_SPR";
+			expression="if (!is3DEN && _value # 0 > 0 && !isMultiplayer) then      {        ENH_SPR_Ruleset = _value param [0, 0];        ENH_SPR_Delay = _value param [1, 20];        ENH_SPR_CanDie = _value param [2, false];        ENH_SPR_RestoreLoadout = _value param [3, false];        ENH_SPR_OnRespawnCode = compile (_value param [4, '']);        ENH_SPR_Positions =        [          allMapMarkers select {'respawn_east' in toLower _x} apply {getMarkerPos _x},          allMapMarkers select {'respawn_west' in toLower _x} apply {getMarkerPos _x},          allMapMarkers select {'respawn_guerilla' in toLower _x} apply {getMarkerPos _x},          allMapMarkers select {'respawn_civilian' in toLower _x} apply {getMarkerPos _x}        ];        {          _x setVariable ['ENH_SPR_OriginalSide', side group _x];          _x setVariable ['ENH_SPR_OriginalLoadout', getUnitLoadout _x];          _x addEventHandler ['handleDamage',          {            params ['_unit', '', '_damage', '', '', '_index'];            if (!alive _unit || lifeState _unit isEqualTo 'INCAPACITATED') exitWith {0};            if (_unit getVariable ['ENH_SPR_Tickets', 0] == 0) then            {              _unit removeEventHandler ['handleDamage', _thisEventHandler];              _damage;            };            if (ENH_SPR_CanDie && _index in [1, 2] && _damage >= 1) exitWith            {              _unit removeEventHandler ['handleDamage', _thisEventHandler];              1;            };            if (_index < 8 && (_damage min 0.95) == 0.95) then            {              setAccTime 1;              _unit allowDamage false;              _unit setCaptive true;              _unit setUnconscious true;              _unit setVariable ['ENH_SPR_Tickets', (_unit getVariable ['ENH_SPR_Tickets', 0]) - 1];              if (isPlayer _unit) then {enableTeamSwitch false} else {removeSwitchableUnit _unit};              moveOut _unit;              _unit spawn ENH_fnc_SPR_respawnTimer;            };            _damage min 0.95;          }];        } forEach (allUnits select {_x getVariable ['ENH_SPR_Tickets', 0] > 0});                ENH_fnc_SPR_respawn =        {          scriptName 'ENH_Attribute_SPR_Respawn';          params ['_unit'];          if (isPlayer _unit) then {enableTeamSwitch true} else {addSwitchableUnit _unit};          if (ENH_SPR_RestoreLoadout) then {_unit setUnitLoadout (_unit getVariable 'ENH_SPR_OriginalLoadout')};          private _sideID = (_unit getVariable 'ENH_SPR_OriginalSide') call BIS_fnc_sideID;          private _positions = ENH_SPR_Positions select _sideID;          if (_positions isNotEqualTo []) then          {            switch (ENH_SPR_Ruleset) do            {              case 3:              {                _unit setPos (([_positions, [], {_unit distance _x}, 'ASCEND'] call BIS_fnc_sortBy) select 0);              };              case 2:              {                _unit setPos selectRandom _positions;              };            };          };          _unit setUnconscious false;          _unit allowDamage true;          _unit setDamage 0;          _unit switchMove '';          _unit call ENH_SPR_OnRespawnCode;          _unit spawn          {            sleep 8;            _this setCaptive false;          };        };                ENH_fnc_SPR_respawnTimer =        {          scriptName 'ENH_Attribute_SPR_RespawnTimer';          params ['_unit'];          private _respawnTime = time + ENH_SPR_Delay;          if (isPlayer _unit) then          {            private _ctrlRespawnTimer = (call BIS_fnc_displayMission) ctrlCreate ['RscStructuredText',-1];            _ctrlRespawnTimer ctrlSetPosition [0.25, 0, 0.5, 0.06];            _ctrlRespawnTimer ctrlSetBackgroundColor [0, 0, 0, 0.1];            _ctrlRespawnTimer ctrlCommit 0;            ENH_SPR_OriginalVolume = [soundVolume, musicVolume, radioVolume, speechVolume, environmentVolume];            0 cutText ['', 'BLACK OUT', 0.3];            0.3 fadeSound 0;            0.3 fadeMusic 0;            0.3 fadeRadio 0;            0.3 fadeSpeech 0;            0.3 fadeEnvironment 0;            showChat false;            while {time < _respawnTime} do            {              _ctrlRespawnTimer ctrlSetStructuredText parseText format ['<t size=''1.25'' color=''#218a36'' align=''center''>%1</t>', [(_respawnTime - time), 'HH:MM'] call BIS_fnc_timeToString];              sleep 0.1;            };            ctrlDelete _ctrlRespawnTimer;            0 cutText ['', 'BLACK IN', 8];            8 fadeSound (ENH_SPR_OriginalVolume # 0);            8 fadeMusic (ENH_SPR_OriginalVolume # 1);            8 fadeRadio (ENH_SPR_OriginalVolume # 2);            8 fadeSpeech (ENH_SPR_OriginalVolume # 3);            8 fadeEnvironment (ENH_SPR_OriginalVolume # 4);            showChat true;            [              ['Respawned'],              [format ['GRID: %1', mapGridPosition _unit]],              [format ['Tickets left: %1', _unit getVariable 'ENH_SPR_Tickets']]            ] spawn BIS_fnc_EXP_camp_SITREP;          }          else          {            if ((side player getFriend (_unit getVariable 'ENH_SPR_OriginalSide')) >= 0.6) then            {              [                str _unit, 'onEachFrame',                {                  drawIcon3D ['\a3\Modules_f\data\portraitRespawn_ca.paa', [0.13, 0.54, 0.21, 0.8], ASLToAGL ((_this # 0) modelToWorldVisualWorld [0, 0, 1]), 1, 1, 0, str round ((_this # 1) - time), 2];                },                [_unit, _respawnTime]              ] call BIS_fnc_addStackedEventHandler;            };            sleep ENH_SPR_Delay;          };          [str _unit, 'onEachFrame'] call BIS_fnc_removeStackedEventHandler;          _unit call ENH_fnc_SPR_respawn;        };      }";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=5;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=20;
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="LT_camo_selector_id_GUER";
 			expression="LT_Camo_var_GUER = _value;";
 			class Value
@@ -368,11 +463,11 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[""U_I_CombatUniform"",""U_I_OfficerUniform"",""U_I_CombatUniform_shortsleeve""],""V_PlateCarrierIA2_dgtl"",""B_Carryall_oli"",[""H_HelmetIA_camo"",""H_HelmetIA""],""tf_rt1523g_big""]";
+					value="[""None"",""None"",""None"",""None"",""None"",""None""]";
 				};
 			};
 		};
-		class Attribute1
+		class Attribute2
 		{
 			property="LT_Gear_selector_id_BLUFOR";
 			expression="LT_wpn_var_BLUFOR = _value;";
@@ -391,7 +486,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute3
 		{
 			property="LT_camo_selector_id";
 			expression="LT_Camo_var = _value;";
@@ -406,11 +501,11 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[""U_B_CombatUniform_mcam_tshirt"",""U_B_CombatUniform_mcam""],[""V_PlateCarrier1_rgr"",""V_PlateCarrier2_rgr""],""B_Carryall_oli"",""H_HelmetB_grass"",""tf_rt1523g_big""]";
+					value="[""None"",""None"",""None"",""None"",""None"",""None""]";
 				};
 			};
 		};
-		class Attribute3
+		class Attribute4
 		{
 			property="LT_Gear_selector_id_OPFOR";
 			expression="LT_wpn_var_OPFOR = _value;";
@@ -429,7 +524,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute4
+		class Attribute5
 		{
 			property="LT_tfr_selector_id";
 			expression="LT_TFR_var = _value;";
@@ -444,11 +539,11 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="0";
+					value="1";
 				};
 			};
 		};
-		class Attribute5
+		class Attribute6
 		{
 			property="LT_camo_selector_id_OPFOR";
 			expression="LT_Camo_var_OPF = _value;";
@@ -463,11 +558,11 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[""U_O_CombatUniform_ocamo"",""V_HarnessO_brn"",""B_AssaultPack_ocamo"",""H_HelmetO_ocamo"",""tf_rt1523g_bwmod""]";
+					value="[""None"",""None"",""None"",""None"",""None"",""None""]";
 				};
 			};
 		};
-		class Attribute6
+		class Attribute7
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -486,7 +581,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute7
+		class Attribute8
 		{
 			property="LT_Gear_selector_id_GUER";
 			expression="LT_wpn_var_GUER = _value;";
@@ -505,7 +600,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=8;
+		nAttributes=9;
 	};
 };
 class Mission
@@ -513,7 +608,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="[LT-Type] Missienaam (versie)";
+		briefingName="[LT-Type] Missienaam (v1)";
 		overviewText="[Text zichbaar tijdens slotten. Benodigdheid van speciale slotten hierin verwerken]";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
@@ -524,7 +619,6 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		wavesForced=1;
 		windForced=1;
 		year=2035;
 		day=28;
@@ -3072,210 +3166,6 @@ class Mission
 				};
 				class Item14
 				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={177,5,175.5};
-					};
-					id=12;
-					type="ModuleRespawnVehicle_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleRespawnVehicle_F_ForcedRespawn";
-							expression="_this setVariable ['ForcedRespawn',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleRespawnVehicle_F_Init";
-							expression="_this setVariable ['Init',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleRespawnVehicle_F_RespawnWhenDisabled";
-							expression="_this setVariable ['RespawnWhenDisabled',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleRespawnVehicle_F_DesertedDistance";
-							expression="_this setVariable ['DesertedDistance',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ModuleRespawnVehicle_F_PositionType";
-							expression="_this setVariable ['PositionType',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ModuleRespawnVehicle_F_RespawnCount";
-							expression="_this setVariable ['RespawnCount',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="ModuleRespawnVehicle_F_Position";
-							expression="_this setVariable ['Position',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ModuleRespawnVehicle_F_Wreck";
-							expression="_this setVariable ['Wreck',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ModuleRespawnVehicle_F_Delay";
-							expression="_this setVariable ['Delay',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="5";
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="ModuleRespawnVehicle_F_ShowNotification";
-							expression="_this setVariable ['ShowNotification',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0";
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item15
-				{
 					dataType="Trigger";
 					position[]={300,5,300};
 					class Attributes
@@ -3287,7 +3177,7 @@ class Mission
 					id=15;
 					type="EmptyDetectorAreaR50";
 				};
-				class Item16
+				class Item15
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -3397,7 +3287,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item17
+				class Item16
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -3507,7 +3397,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item18
+				class Item17
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -3617,7 +3507,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item19
+				class Item18
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -3727,9 +3617,30 @@ class Mission
 						nAttributes=5;
 					};
 				};
+				class Item19
+				{
+					dataType="Layer";
+					name="Headless Client";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={2.1040001,5,1.969};
+							};
+							name="LT_HC_UNIT_01";
+							id=2474;
+							type="HeadlessClient_F";
+						};
+					};
+					id=2475;
+				};
 			};
 			id=188;
-			atlOffset=123.75;
+			atlOffset=61.875;
 		};
 		class Item1
 		{
@@ -4032,6 +3943,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=216;
 					type="B_Plane_CAS_01_dynamicLoadout_F";
@@ -4089,6 +4001,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=219;
 					type="B_Plane_CAS_01_dynamicLoadout_F";
@@ -4146,6 +4059,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=170;
 					type="B_APC_Wheeled_01_cannon_F";
@@ -4222,6 +4136,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=171;
 					type="B_APC_Wheeled_01_cannon_F";
@@ -4298,6 +4213,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=172;
 					type="B_APC_Wheeled_01_cannon_F";
@@ -4374,6 +4290,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=185;
 					type="B_MBT_01_TUSK_F";
@@ -4450,6 +4367,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=186;
 					type="B_MBT_01_TUSK_F";
@@ -4526,6 +4444,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=187;
 					type="B_MBT_01_TUSK_F";
@@ -4602,6 +4521,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=211;
 					type="B_Heli_Attack_01_dynamicLoadout_F";
@@ -4678,6 +4598,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=212;
 					type="B_Heli_Attack_01_dynamicLoadout_F";
@@ -4754,6 +4675,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=213;
 					type="B_Heli_Attack_01_dynamicLoadout_F";
@@ -4830,6 +4752,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=199;
 					type="B_Heli_Transport_01_F";
@@ -4906,6 +4829,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=200;
 					type="B_Heli_Transport_01_F";
@@ -4982,6 +4906,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=201;
 					type="B_Heli_Transport_01_F";
@@ -16148,6 +16073,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=921;
 					type="O_Heli_Attack_02_dynamicLoadout_F";
@@ -16224,6 +16150,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=922;
 					type="O_Heli_Attack_02_dynamicLoadout_F";
@@ -16300,6 +16227,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=923;
 					type="O_Heli_Attack_02_dynamicLoadout_F";
@@ -16376,6 +16304,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=879;
 					type="O_APC_Wheeled_02_rcws_v2_F";
@@ -16452,6 +16381,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=880;
 					type="O_APC_Wheeled_02_rcws_v2_F";
@@ -16528,6 +16458,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=881;
 					type="O_APC_Wheeled_02_rcws_v2_F";
@@ -16604,6 +16535,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 						reportRemoteTargets=1;
 						receiveRemoteTargets=1;
 						reportOwnPosition=1;
@@ -16683,6 +16615,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 						reportRemoteTargets=1;
 						receiveRemoteTargets=1;
 						reportOwnPosition=1;
@@ -17044,6 +16977,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1780;
 					type="O_MBT_02_cannon_F";
@@ -17120,6 +17054,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1781;
 					type="O_MBT_02_cannon_F";
@@ -17196,6 +17131,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1782;
 					type="O_MBT_02_cannon_F";
@@ -17272,6 +17208,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1789;
 					type="O_Heli_Light_02_unarmed_F";
@@ -17348,6 +17285,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1790;
 					type="O_Heli_Light_02_unarmed_F";
@@ -17424,6 +17362,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1791;
 					type="O_Heli_Light_02_unarmed_F";
@@ -27364,6 +27303,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1111;
 					type="CUP_I_AH1Z_Dynamic_AAF";
@@ -27421,6 +27361,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1115;
 					type="CUP_I_AH1Z_Dynamic_AAF";
@@ -27478,6 +27419,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1119;
 					type="CUP_I_AH1Z_Dynamic_AAF";
@@ -27535,6 +27477,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1098;
 					type="I_Heli_Transport_02_F";
@@ -27611,6 +27554,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1102;
 					type="I_Heli_Transport_02_F";
@@ -27687,6 +27631,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1106;
 					type="I_Heli_Transport_02_F";
@@ -27763,6 +27708,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1124;
 					type="I_Plane_Fighter_03_dynamicLoadout_F";
@@ -27820,6 +27766,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1125;
 					type="I_Plane_Fighter_03_dynamicLoadout_F";
@@ -27877,6 +27824,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1090;
 					type="I_MBT_03_cannon_F";
@@ -27953,6 +27901,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1091;
 					type="I_MBT_03_cannon_F";
@@ -28029,6 +27978,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1092;
 					type="I_MBT_03_cannon_F";
@@ -28105,6 +28055,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1087;
 					type="I_APC_Wheeled_03_cannon_F";
@@ -28181,6 +28132,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1088;
 					type="I_APC_Wheeled_03_cannon_F";
@@ -28257,6 +28209,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="[this, 30] call FRED_fnc_vehicleRespawn;";
 					};
 					id=1089;
 					type="I_APC_Wheeled_03_cannon_F";
@@ -38510,6 +38463,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, 30] call FRED_fnc_vehicleRespawn;";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
@@ -38527,6 +38481,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, 30] call FRED_fnc_vehicleRespawn;";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
@@ -38544,6 +38499,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, 30] call FRED_fnc_vehicleRespawn;";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
@@ -38561,6 +38517,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, 30] call FRED_fnc_vehicleRespawn;";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
@@ -38578,6 +38535,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, 30] call FRED_fnc_vehicleRespawn;";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
@@ -38595,6 +38553,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="[this, 30] call FRED_fnc_vehicleRespawn;";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
@@ -38606,11 +38565,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=47;
+			nextID=7;
 		};
 		class Links
 		{
-			items=47;
+			items=7;
 			class Item0
 			{
 				linkID=0;
@@ -38674,406 +38633,6 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=170;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item7
-			{
-				linkID=7;
-				item0=171;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item8
-			{
-				linkID=8;
-				item0=172;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item9
-			{
-				linkID=9;
-				item0=185;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item10
-			{
-				linkID=10;
-				item0=186;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item11
-			{
-				linkID=11;
-				item0=187;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item12
-			{
-				linkID=12;
-				item0=201;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item13
-			{
-				linkID=13;
-				item0=200;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item14
-			{
-				linkID=14;
-				item0=199;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item15
-			{
-				linkID=15;
-				item0=211;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item16
-			{
-				linkID=16;
-				item0=212;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item17
-			{
-				linkID=17;
-				item0=213;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item18
-			{
-				linkID=18;
-				item0=216;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item19
-			{
-				linkID=19;
-				item0=219;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item20
-			{
-				linkID=20;
-				item0=1789;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item21
-			{
-				linkID=21;
-				item0=1790;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item22
-			{
-				linkID=22;
-				item0=1791;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item23
-			{
-				linkID=23;
-				item0=923;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item24
-			{
-				linkID=24;
-				item0=922;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item25
-			{
-				linkID=25;
-				item0=921;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item26
-			{
-				linkID=26;
-				item0=1780;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item27
-			{
-				linkID=27;
-				item0=1781;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item28
-			{
-				linkID=28;
-				item0=1782;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item29
-			{
-				linkID=29;
-				item0=879;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item30
-			{
-				linkID=30;
-				item0=880;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item31
-			{
-				linkID=31;
-				item0=881;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item32
-			{
-				linkID=32;
-				item0=1111;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item33
-			{
-				linkID=33;
-				item0=1115;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item34
-			{
-				linkID=34;
-				item0=1119;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item35
-			{
-				linkID=35;
-				item0=1098;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item36
-			{
-				linkID=36;
-				item0=1102;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item37
-			{
-				linkID=37;
-				item0=1106;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item38
-			{
-				linkID=38;
-				item0=1124;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item39
-			{
-				linkID=39;
-				item0=1125;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item40
-			{
-				linkID=40;
-				item0=1090;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item41
-			{
-				linkID=41;
-				item0=1091;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item42
-			{
-				linkID=42;
-				item0=1092;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item43
-			{
-				linkID=43;
-				item0=1087;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item44
-			{
-				linkID=44;
-				item0=1088;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item45
-			{
-				linkID=45;
-				item0=1089;
-				item1=12;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item46
-			{
-				linkID=46;
 				item0=2009;
 				item1=2008;
 				class CustomData
