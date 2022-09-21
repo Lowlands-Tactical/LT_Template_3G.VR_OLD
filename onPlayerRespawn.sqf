@@ -4,4 +4,4 @@
 null = execVM "\lt_template_base\init\common.sqf";
 
 // Respawn specific script.
-null = execVM "\lt_template_base\init\onPlayerRespawn.sqf";
+null = [_this select 0, _this select 1] execVM "\lt_template_base\init\onPlayerRespawn.sqf";
